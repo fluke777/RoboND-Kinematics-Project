@@ -169,18 +169,13 @@ Then we turn into rotational by croppping and use sympy to simplify. Then we app
 Code is present here. Brief outline of solution was in previous section.
 
 #### Implementation difficulties
-During the implamentation I had one major issue and that was numericall stability of the implementations of inversion of matrices. I tried several implementations (LU decomposition, inversion, transposition) with different results on different systems. Unfortunately the notes are misleading here. During ~3 days of debugging I switched my implementation for the vanilla one almost completely and it still gave weird results until I switched the inverse for the transpose.
-
-During writing this report I also noticed interesting tidbit that is present in the walktrhough and also copied in my code and that is the implemenation of Theta6 which is
-
-	theta6 = atan2(-R3_6[1,1], R3_6[1,0])
-
-Which is not exactly according to the definition although it still returns correct angle + 2pi. Both versions seem to work althought the "incorrect" one seems to perform less rotations.
-
+During the implamentation I had one major issue and that was numerical stability of the implementations of inversion of matrices. I tried several implementations (LU decomposition, inversion, transposition) with different results on different computers. Unfortunately the notes are misleading here. During ~3 days of debugging I switched portions of the implementation for the walkthrough one and it still gave weird results until I switched the inverse for the transpose. Potentially something that might be improved in the future.
 
 #### Areas for improvements
 
-Since this project is fairly big the areas are not so much improvements but more areas for further exploration. I would definitely like to understand the whole chain. Especially how the planner works since sometimes it does not feel like the path planned is optimal
+Since this project is fairly big the areas are not so much improvements but more areas for further exploration.
+- I would definitely like to understand the whole chain. Especially how the planner works since sometimes it does not feel like the path planned is optimal
+- ROS + gazebo seems like a very powerful tool
 
 
 ### Attributions
