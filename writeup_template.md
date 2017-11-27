@@ -120,15 +120,15 @@ where angle_a_x is acquired by
 
 ###### Theta 3
 
-Theta 3 can be taken by realizing
+Theta 3 can be coputed by realizing that Theta 3 and **reflected beta** has to equal `pi/2`
 
 ![alt text](/images/IMG_0331.jpg)
 
-That Theta 3 and **reflected beta** has to equal `pi/2` on Which can be expressed as an equation as
+This can be expressed in equation as
 
 ![alt text](/images/IMG_0330.jpg)
 
-Here in the derivation we omit the small correction of the beta angle discussed before caused by the sag of the link.
+Here in the derivation I omit the small correction of the beta angle discussed before caused by the sag of the link.
 
 ###### Theta 4-6
 From known rotation matrix we want to extract euler's angles. This is done by 2 tricks. Generally we want to use atans as much as possible due to unambiguity compared to arcsin.
