@@ -13,7 +13,7 @@
 
 After acquainting ourself with the environment I derived the DH parameters and implemented forward and backward kinematics using the IK
 
-![alt text](images/unnamed.png?raw=true | width=300)
+![alt text](images/unnamed.png?raw=true)
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
