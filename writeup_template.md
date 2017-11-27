@@ -17,7 +17,7 @@ After acquainting ourself with the environment I derived the DH parameters and i
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
-![alt text](/images/IMG_0338.jpg?raw=true | width=300)
+![alt text](/images/IMG_0338.jpg?raw=true)
 
 Here is a DH parameters table.
 
@@ -72,21 +72,21 @@ The solution goes like this.
 ###### Theta 1
 Seen from above we can simply calculate theta 1 by using atan2 directly
 
-![alt text](/images/IMG_0325.jpg?raw=true | width=300)
+![alt text](/images/IMG_0325.jpg?raw=true)
 
 	theta_1 = atan2(wc[0], wc[1])
 
 ###### Triangle ABC
 Both theta 2 and theta 3 can be calculated from a triangle A (joint 2), B(joint 3), C (wrist center).
 
-![alt text](/images/IMG_0332.jpg?raw=true | width=300)
+![alt text](/images/IMG_0332.jpg?raw=true)
 
 First we calculate the sides of a triangle and then use cosine sentences to get the corresponding angles.
 
 ###### Side b
 First let's grab side b. It can be calculated by pythagorean theorem from sides b_b and b_a on the following picture.
 
-![alt text](/images/IMG_0328.jpg?raw=true | width=300)
+![alt text](/images/IMG_0328.jpg?raw=true)
 
 **b_a** we get almost directly from the position of wrist center. **b_b** can be calculated by another application of pythagoreas from x and y position of wrist center. Both need to be accounted for the fact that they are measured from point 2 and not the origin.
 
@@ -98,7 +98,7 @@ Just taking the side A from DH parameters directly yields decent results but we 
 
 The error comes from the fact that the link represented by c is not a straight link but has a curve or "sag" to it. The corrected length of the side c is simply acquired by computing the hypotenuse of that link for the DH parameters (the sag in the following picture is really exagerrated).
 
-![alt text](images/IMG_0333.jpg?raw=true | width=300)
+![alt text](images/IMG_0333.jpg?raw=true)
 
 The second correction comes to the angle. And is acquired by for example atan2 from the sides.
 
@@ -115,7 +115,7 @@ where angle_a_x is acquired by
 
 	angle_a_x = atan2(b_y, b_x)
 	
-![alt text](/images/IMG_0334.jpg?raw=true | width=300)
+![alt text](/images/IMG_0334.jpg?raw=true)
 
 
 ###### Theta 3
