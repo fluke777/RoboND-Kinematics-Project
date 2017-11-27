@@ -17,7 +17,7 @@ After acquainting ourself with the environment I derived the DH parameters and i
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
-![alt text](images/IMG_0338.jpg =300x)
+![alt text](/images/IMG_0338.jpg?raw=true)
 
 Here is a DH parameters table.
 
@@ -72,14 +72,14 @@ The solution goes like this.
 ###### Theta 1
 Seen from above we can simply calculate theta 1 by using atan2 directly
 
-![alt text](images/IMG_0325.jpg =300x)
+![alt text](/images/IMG_0325.jpg?raw=true)
 
 	theta_1 = atan2(wc[0], wc[1])
 
 ###### Triangle ABC
 Both theta 2 and theta 3 can be calculated from a triangle A (joint 2), B(joint 3), C (wrist center).
 
-![alt text](images/IMG_0332.jpg =300x)
+![alt text](/images/IMG_0332.jpg?raw=true)
 
 First we calculate the sides of a triangle and then use cosine sentences to get the corresponding angles.
 
