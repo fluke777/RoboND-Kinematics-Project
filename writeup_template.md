@@ -86,7 +86,7 @@ First we calculate the sides of a triangle and then use cosine sentences to get 
 ###### Side b
 First let's grab side b. It can be calculated by pythagorean theorem from sides b_b and b_a on the following picture.
 
-![alt text](/images/IMG_0328.jpg)
+![alt text](/images/IMG_0328.jpg?raw=true)
 
 **b_a** we get almost directly from the position of wrist center. **b_b** can be calculated by another application of pythagoreas from x and y position of wrist center. Both need to be accounted for the fact that they are measured from point 2 and not the origin.
 
