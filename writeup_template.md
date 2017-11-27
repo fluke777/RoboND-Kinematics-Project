@@ -54,7 +54,7 @@ Derivation of DH parameters is not difficult but definitely requires practice to
 
 After acquainting ourself with the environment I derived the DH parameters and implemented forward and backward kinematics using the IK. Here is the output of the debug script which was essential to make it work.
 
-![alt text](images/unnamed.png =300x)
+![alt text](images/unnamed.png =600x)
 
 #### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
 
