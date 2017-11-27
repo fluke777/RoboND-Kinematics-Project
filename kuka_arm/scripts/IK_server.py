@@ -148,13 +148,10 @@ def handle_calculate_IK(req):
             # transpose does. We can use it since this should be symetric matrix
             R3_6 = Transpose(R0_3) * ROT_EE
             
-            # now we can just extract the angles from the matric
+            # now we can just extract the angles from the matrix
             # See the writeup for details why these equations look like they do
             theta4 = atan2(R3_6[2,2], -R3_6[0,2])
             theta5 = atan2(sqrt(R3_6[0,2]*R3_6[0,2] + R3_6[2,2]*R3_6[2,2]), R3_6[1,2])
-            # Not sure why the sign is flipped here but it seems to perform better
-            # Does not make the rotation during "pickup phase"
-            # theta6 = atan2(R3_6[1,1], -R3_6[1,0])
             theta6 = atan2(-R3_6[1,1], R3_6[1,0])
             
             ###

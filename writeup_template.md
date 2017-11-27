@@ -155,6 +155,13 @@ The second one is using the idea
     
     tg(2) = sin(2)/ sqrt(cos^2(x)sin^2(y) + cos^2(x)cos^2(y))
 
+Here the example uses Z Y X matrix. The real code actually uses R3_EE. First we calculate 
+
+	T3_EE = T3_4 * T4_5 * T5_6 * T6_EE
+
+Then we turn into rotational by croppping and use sympy to simplify. Then we apply exactly the same approach as above.
+	
+
 ### Project Implementation
 
 #### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
@@ -176,4 +183,5 @@ Which is not exactly according to the definition although it still returns corre
 Since this project is fairly big the areas are not so much improvements but more areas for further exploration. I would definitely like to understand the whole chain. Especially how the planner works since sometimes it does not feel like the path planned is optimal
 
 
-
+### Attributions
+- Portions of the code are used from the project walkthrough
