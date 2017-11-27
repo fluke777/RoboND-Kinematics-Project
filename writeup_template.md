@@ -122,11 +122,11 @@ where angle_a_x is acquired by
 
 Theta 3 can be taken by realizing
 
-![alt text](images/IMG_0331.jpg =300x)
+![alt text](/images/IMG_0331.jpg)
 
 That Theta 3 and **reflected beta** has to equal `pi/2` on Which can be expressed as an equation as
 
-![alt text](images/IMG_0330.jpg =300x)
+![alt text](/images/IMG_0330.jpg)
 
 Here in the derivation we omit the small correction of the beta angle discussed before caused by the sag of the link.
 
@@ -135,7 +135,7 @@ From known rotation matrix we want to extract euler's angles. This is done by 2 
 
 The trigonometric tricks are illustrated in the following image.
 
-![alt text](images/IMG_0337.jpg =500x)
+![alt text](/images/IMG_0337.jpg)
 
 One is leveraging the identity
 
